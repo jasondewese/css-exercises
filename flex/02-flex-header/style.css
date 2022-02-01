@@ -1,6 +1,9 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo {
@@ -9,11 +12,24 @@
   color: tomato;
   background: white;
   padding: 4px 32px;
+
+  /*add space above and below logo within header*/
+  margin: 10px 0;
 }
 
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  
+  /*Undo default padding-left for ul and ol which is 40 px (to make it look indented by default*/
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  
+}
+
+li {
+  margin: 10px;
 }
 
 a {
